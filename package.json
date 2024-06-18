@@ -11,9 +11,14 @@
   },
   "author": "motopeco",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/motopeco/remix-invariant"
+  },
   "dependencies": {
     "@remix-run/node": "^2.9.2"
   },
+  "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
