@@ -27,20 +27,23 @@ function getMessage(message?: string | (() => string)) {
   return message;
 }
 
-export function jsonInvariant(condition: any, status?: number): Error | void;
+export function jsonInvariant(
+  condition: any,
+  status?: number,
+): asserts condition;
 
 export function jsonInvariant(
   condition: any,
   status?: number,
   devMessage?: string | (() => string),
-): Error | void;
+): asserts condition;
 
 export function jsonInvariant(
   condition: any,
   status?: number,
   devMessage?: string | (() => string),
   prodMessage?: string | (() => string),
-): Error | void;
+): asserts condition;
 
 export function jsonInvariant(
   condition: any,

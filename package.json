@@ -1,6 +1,6 @@
 {
   "name": "remix-invariant",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/remix-invariant.js",
   "types": "dist/remix-invariant.d.ts",
