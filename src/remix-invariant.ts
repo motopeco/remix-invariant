@@ -53,3 +53,33 @@ export function invariant(
     },
   );
 }
+
+export function simpleInvariant(
+  condition: any,
+  message: string,
+  status?: number,
+): asserts condition {
+  if (condition) {
+    return;
+  }
+
+  throw json(
+    {
+      message,
+    },
+    {
+      status: status || 200,
+    },
+  );
+}
+
+export function customInvariant(
+  condition: any,
+  throwHandler: () => any,
+): asserts condition {
+  if (condition) {
+    return;
+  }
+
+  throw throwHandler();
+}
